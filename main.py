@@ -26,6 +26,7 @@ async def lifespan(app_: FastAPI):
 
 app = FastAPI(title="To Do App", lifespan=lifespan)
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['*'],
